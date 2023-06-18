@@ -1,0 +1,32 @@
+tracer.property: "I AM THE DEFAULT"
+server.port: "8082"
+
+spring.jpa.database: "MYSQL"
+spring.datasource.platform:  "mysql"
+spring.jpa.show-sql: "false"
+spring.database.driver-class-name: "com.mysql.jdbc.Driver"
+spring.jpa.hibernate.ddl-auto: "none"
+#spring.datasource.url: "{cipher}956b3dc57605ebd7c7426c0536c97fb8bb8d877b38a42c52fdf68dadfbdec59d82f082694cf4fbb3c92421a9bcca01b2762d9af98b9b7246ea6a43db15c2f305b7fdf3b2e93c07743514adb51e0368c38fb53d39c5051a0f56f89dd5e2e05a4224618b3d52904b4fd5832a46527130c9"
+#spring.datasource.username: "{cipher}1c81a682d3bd1bc738a33856af6b638423b2733e3c0df5f27842265fd5506d7e"
+#spring.datasource.password: "{cipher}1c81a682d3bd1bc738a33856af6b638423b2733e3c0df5f27842265fd5506d7e"
+#pring.datasource.testWhileIdle: "true"
+#spring.datasource.validationQuery: "SELECT 1"
+spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.MySQL55Dialect"
+spring.jpa.hibernate.naming.physical-strategy: "org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl"
+#spring.cloud.config.server.encrypt.enabled: "false"
+
+redis.server: "localhost"
+redis.port: "6379"
+signing.key: "{cipher}543e6034087e20441bbbf56991dc59ff725af6c7818a14532dcf2fc2efb0a6c1a36e3a36cbc3fee666ff12d97b07d90f"
+
+management.endpoints.web.exposure.include: "*"
+security.oauth2.resource.userInfoUri: "http://localhost:8901/auth/user"
+#signing.key: "alteredcarbons1e7"
+
+eureka.instance.preferIpAddress: "true"
+eureka.client.registerWithEureka: "true"
+eureka.client.fetchRegistry: "true"
+eureka.client.serviceUrl.defaultZone: "https://localhost:8761/eureka/"
+
+#This will prevent hibernate from looking for hibernate_sequence entries for auto increment on PK
+spring.jpa.hibernate.use-new-id-generator-mappings: "false"
